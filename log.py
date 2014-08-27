@@ -34,8 +34,8 @@ def main():
     while True:
         filename = 'log_%s.txt'%datetime.datetime.now().strftime("%Y-%m-%d-%H%M")
         
-        savelog(getlog(url_clog),filepath+'common/'+'common'+filename)
-        savelog(getlog(url_slog),filepath+'security'+filename)
+        savelog(getlog(url_clog),filepath+'common/'+''+'common_'+filename)
+        savelog(getlog(url_slog),filepath+'security/'+'security_'filename)
         time.sleep(60*60*24)
         
 if __name__ == '__main__':
